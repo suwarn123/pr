@@ -1,0 +1,1625 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+p {
+  font-family: "Quicksand", sans-serif;
+}
+
+.img-res {
+  width: 100%;
+  height: auto;
+}
+
+#about_page {
+  background: linear-gradient(100deg, tomato, lightblue);
+  height: 100vh;
+}
+
+/*This is the entire css for services part */
+/*This is the css for Veganism page-Fitness Page- Addiction Free  -Starts Here */
+#page_content,
+#info_content,
+#client_section,
+#product_section,
+#blogs_section,
+#events_section,
+#trainers_section {
+  background: rgba(250, 230, 177, 0.3);
+  height: auto;
+  padding: 1%;
+}
+
+.text-area,
+.text_box_info {
+  width: 50%;
+  height: auto;
+  padding: 1%;
+  margin: auto;
+}
+.text-area .h_text,
+.text_box_info .h_text,
+.text-area .text_box_info h2,
+.text_box_info .text-area h2,
+.text_box_info h2 {
+  font-weight: 900;
+  color: #ffa101;
+  font-size: 42px;
+  text-align: left;
+  padding: 0 1%;
+}
+.text-area h4,
+.text_box_info h4 {
+  font-weight: 400;
+  font-size: 25px;
+  text-align: justify;
+  padding: 0 1%;
+}
+.text-area p,
+.text_box_info p {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: justify;
+}
+.text-area p a,
+.text_box_info p a {
+  text-decoration: none;
+  color: #b3dee5;
+}
+.text-area .imgbox,
+.text_box_info .imgbox {
+  width: 90%;
+  height: 50%;
+  margin: auto;
+}
+.text-area .imgbox .center_box,
+.text_box_info .imgbox .center_box {
+  background: #b3dee5;
+  width: 90%;
+  padding: 1%;
+}
+.text-area .imgbox .center_box h2,
+.text_box_info .imgbox .center_box h2 {
+  font-size: 30px;
+  color: #ffa101;
+  font-weight: 700;
+  padding: 1%;
+}
+.text-area .imgbox .center_box ul,
+.text_box_info .imgbox .center_box ul {
+  background: #b3dee5;
+  padding: 1% 2%;
+}
+.text-area .imgbox .center_box ul li,
+.text_box_info .imgbox .center_box ul li {
+  padding: 1% 0;
+  font-weight: 500;
+  font-size: 17px;
+  color: #31515c;
+}
+.text-area .imgbox h3,
+.text_box_info .imgbox h3 {
+  color: #ffa101;
+  font-size: 35px;
+  font-weight: 800;
+}
+
+/*This is the css for Veganism page -Ends Here */
+/*This is the css for info section that contains... Disclaimer, Terms and condtion and Privacy Policy pages.. Starts Here */
+.text_box_info {
+  width: 85%;
+  color: #31515c;
+}
+.text_box_info h2 {
+  text-align: center;
+}
+.text_box_info h4 {
+  font-weight: 400;
+  font-size: 25px;
+  text-align: justify;
+  padding: 0 1%;
+}
+.text_box_info h3 {
+  font-size: 25px;
+  color: #ffa101;
+  font-weight: 500;
+  padding: 1%;
+}
+.text_box_info p {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: justify;
+}
+.text_box_info p a {
+  text-decoration: none;
+  color: #b3dee5;
+}
+.text_box_info ul {
+  background: #b3dee5;
+  padding: 1% 2%;
+}
+.text_box_info ul li {
+  padding: 1% 0;
+  font-weight: 500;
+  font-size: 17px;
+  color: #31515c;
+}
+
+/*This is the css for info section that contains... Disclaimer, Terms and condtion and Privacy Policy pages.. Ends Here */
+/* Css for Navbar */
+nav {
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 0 100px;
+  background: #b3dee5;
+  width: 100%;
+  box-sizing: border-box;
+  transition: 0.5s;
+  height: 80px !important;
+}
+
+menu {
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 100%;
+  transition: 0.5s;
+  z-index: 9999;
+}
+
+nav .logo {
+  color: #fff;
+  height: 50px;
+  line-height: 50px;
+  font-size: 24px;
+  float: left;
+  font-weight: bold;
+  padding: 1%;
+  margin: auto !important;
+}
+
+nav .navbar {
+  float: right;
+  margin-top: 15px !important;
+}
+
+nav .navbar ul {
+  padding: 0;
+  display: flex;
+}
+
+nav .navbar ul li {
+  list-style: none;
+  position: relative;
+}
+
+nav .navbar ul li.sub-menu:before {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  position: absolute;
+  line-height: 50px;
+  color: #fff !important;
+  right: 5px;
+}
+
+nav .navbar ul li ul {
+  position: absolute;
+  left: 0;
+  background: #b3dee5;
+  display: none;
+  top: 50px;
+  z-index: 999;
+  transition: 0.5s;
+}
+
+nav .navbar ul li.active ul {
+  display: block;
+}
+
+nav .navbar ul li ul li {
+  display: block;
+  width: 150px;
+}
+
+nav .navbar ul li a {
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+  color: #31515c;
+  text-decoration: none;
+  display: block;
+  font-weight: 500;
+  margin: auto !important;
+  font-size: 16px;
+}
+
+nav .navbar ul li a:hover,
+nav .navbar ul li a.active {
+  color: #31515c;
+  background: #ffa101;
+}
+
+.menu-toggle {
+  color: #31515c;
+  float: right;
+  line-height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+}
+
+/* Css for Navbar */
+/*This is the slider in header part below navigation bar */
+.home_page_slider {
+  height: auto;
+  position: absolute;
+}
+.home_page_slider .sliderbox {
+  height: 650px;
+  width: 100% !important;
+  background: aqua;
+  padding: 0;
+}
+.home_page_slider .sliderbox img {
+  max-width: 100%;
+  height: auto;
+  display: block !important;
+}
+
+.home_page_slider .owl-dots {
+  text-align: center;
+  padding-top: 15px;
+  position: absolute;
+  left: 50%;
+  bottom: 2%;
+}
+
+.home_page_slider .owl-dots button.owl-dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  background: #b3dee5;
+  margin: 0 3px;
+}
+
+.home_page_slider .owl-dots button.owl-dot.active {
+  background-color: #ffa101;
+}
+
+.home_page_slider .owl-dots button.owl-dot:focus {
+  outline: none;
+}
+
+/*This is the slider in header part below navigation bar */
+/*this is the section for products */
+#products,
+#blogs_sec,
+#info,
+#foot_nav {
+  height: auto;
+  padding: 1%;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: auto;
+}
+#products .product_text,
+#blogs_sec .product_text,
+#info .product_text,
+#foot_nav .product_text,
+#blogs_sec .blogs_text {
+  font-weight: 700;
+  font-size: 40px;
+  color: #ffa101;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 1%;
+}
+#products .product_sec,
+#blogs_sec .product_sec,
+#info .product_sec,
+#foot_nav .product_sec,
+#blogs_sec .blogs_sec {
+  margin: auto;
+  width: 100%;
+  padding: 1%;
+  display: flex;
+  flex-flow: row wrap;
+}
+#products .product_sec .product_box,
+#blogs_sec .product_sec .product_box,
+#info .product_sec .product_box,
+#foot_nav .product_sec .product_box,
+#blogs_sec .blogs_sec .product_box,
+#blogs_sec .blogs_sec .blogs_box {
+  width: 25%;
+  margin: 10px auto;
+  transition: 0.4s ease;
+}
+#products .product_sec .product_box:hover,
+#blogs_sec .product_sec .product_box:hover,
+#info .product_sec .product_box:hover,
+#foot_nav .product_sec .product_box:hover,
+#blogs_sec .blogs_sec .product_box:hover,
+#blogs_sec .blogs_sec .blogs_box:hover {
+  box-shadow: 2px 2px 5px 2px rgba(255, 161, 1, 0.6);
+}
+#products .product_sec .product_box a,
+#blogs_sec .product_sec .product_box a,
+#info .product_sec .product_box a,
+#foot_nav .product_sec .product_box a,
+#blogs_sec .blogs_sec .product_box a,
+#blogs_sec .blogs_sec .blogs_box a {
+  text-decoration: none;
+}
+#products .product_sec .product_box a h5,
+#blogs_sec .product_sec .product_box a h5,
+#info .product_sec .product_box a h5,
+#foot_nav .product_sec .product_box a h5,
+#blogs_sec .blogs_sec .product_box a h5,
+#blogs_sec .blogs_sec .blogs_box a h5 {
+  color: #31515c;
+  text-align: center;
+  font-weight: 600;
+  font-size: 25px;
+  padding: 1%;
+  text-transform: uppercase;
+}
+#products .product_sec .product_box a h5:hover,
+#blogs_sec .product_sec .product_box a h5:hover,
+#info .product_sec .product_box a h5:hover,
+#foot_nav .product_sec .product_box a h5:hover,
+#blogs_sec .blogs_sec .product_box a h5:hover,
+#blogs_sec .blogs_sec .blogs_box a h5:hover {
+  color: #31515c;
+}
+
+/*this is the section for products */
+/*This is the css for banner with view member button */
+/*Banner Section */
+#banner {
+  height: auto !important;
+  background: linear-gradient(#fae6b1, #b3dee5);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  padding: 1%;
+}
+#banner .banner_content {
+  padding: 2%;
+  display: flex;
+  width: 75%;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+}
+#banner .banner_content h2 {
+  text-align: center;
+  color: #ffa101;
+  font-size: 30px;
+  padding: 1%;
+  text-transform: uppercase;
+}
+#banner .banner_content .b_btn {
+  padding: 10px 20px;
+  width: auto;
+  background: #31515c;
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  box-shadow: 0px 0px 10px grey;
+  text-transform: capitalize;
+  transition: 0.5s ease-in-out;
+}
+#banner .banner_content .b_btn:hover {
+  background: #ffa101;
+  box-shadow: none;
+  color: #fff;
+}
+
+/*Banner Section */
+/*This is the css for banner with view member button */
+/*Blogs Section css starts from here */
+#blogs_sec {
+  background-position: center center;
+  background-attachment: fixed;
+}
+#blogs_sec .blogs_sec {
+  flex-flow: row wrap !important;
+}
+#blogs_sec .blogs_sec .blogs_box {
+  box-shadow: none;
+  width: 22%;
+  transition: 0.5s ease;
+}
+#blogs_sec .blogs_sec .blogs_box:hover {
+  box-shadow: 2px 2px 5px 2px rgba(255, 161, 1, 0.6);
+}
+#blogs_sec .blogs_sec .blogs_box a {
+  text-decoration: none;
+  font-size: 15px;
+  font-size: 500 !important;
+}
+#blogs_sec .blogs_sec .blogs_box a p {
+  text-align: justify;
+  color: #31515c;
+  padding: 1%;
+}
+
+/*Blogs Section css ends here */
+/*This is the section for videos and event */
+#info {
+  background: linear-gradient(#fae6b1, #b3dee5);
+  background-attachment: scroll;
+  background-position: center center;
+  display: flex;
+  justify-content: space-between;
+}
+#info #videos {
+  width: 50%;
+  padding: 1%;
+  margin: 5px auto;
+}
+#info #videos .video_text {
+  text-align: center;
+  color: #ffa101;
+  font-size: 30px;
+  padding: 1%;
+  text-transform: uppercase;
+}
+#info #videos .videos_sec {
+  width: 100%;
+  padding: 1%;
+  display: flex;
+  justify-content: space-between;
+  overflow: scroll;
+}
+#info #events {
+  width: 60%;
+  padding: 1%;
+  margin: 5px auto;
+}
+#info #events .event_text {
+  text-align: center;
+  color: #ffa101;
+  font-size: 30px;
+  padding: 1%;
+  text-transform: uppercase;
+}
+#info #events .events_sec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 1%;
+}
+#info #events .events_sec button {
+  padding: 10px 20px;
+  width: auto;
+  background: #31515c;
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: capitalize;
+  transition: 0.4s ease-in-out;
+}
+#info #events .events_sec button:hover {
+  background: #ffa101;
+  box-shadow: none;
+  color: #fff;
+}
+#info #events .events_sec .eventbox {
+  padding: 1%;
+  margin: 5px auto;
+  border-radius: 5px;
+  width: 60%;
+  transition: 0.3s ease-out;
+}
+#info #events .events_sec .eventbox:hover {
+  box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.4);
+}
+#info #events .events_sec .eventbox a {
+  text-align: justify;
+  text-decoration: none;
+  color: #31515c;
+  font-size: 19px;
+  font-weight: 400;
+}
+#info #events .events_sec .eventbox a span {
+  color: #31515c;
+  font-weight: 200;
+  font-size: 16px;
+}
+
+/*This is the section for videos and event */
+/*This is the section for footer navigation bar */
+#foot_nav {
+  background-position: center center;
+  background-attachment: fixed;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+#foot_nav .nav_sec {
+  width: 15%;
+}
+#foot_nav .nav_sec .social_icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#foot_nav .nav_sec .social_icon a {
+  width: 13%;
+  margin: auto 5px;
+}
+#foot_nav .nav_sec h3 {
+  padding: 2%;
+  text-align: left;
+  color: #ffa101;
+  font-weight: 700;
+}
+#foot_nav .nav_sec ul {
+  margin: auto;
+  list-style: none;
+}
+#foot_nav .nav_sec ul li a {
+  text-decoration: none;
+  color: #31515c;
+  text-align: left;
+  display: block;
+  padding: 5px;
+  font-size: 15px;
+  font-weight: 500;
+  margin: 3px 0;
+}
+#foot_nav .nav_sec ul li a:hover {
+  color: #000;
+}
+
+/*This is the section for footer navigation bar */
+/*This is the End Footer Css  */
+footer {
+  background: #b3dee5;
+  padding: 5px;
+  width: 100%;
+}
+footer .footer_text {
+  margin: auto;
+}
+footer .footer_text p {
+  text-align: center;
+  font-weight: 600;
+  font-size: 16px;
+  color: #31515c;
+  padding: 2px;
+}
+footer .footer_text p a {
+  color: #ffa101;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/*This is the End Footer Css  */
+/*this is the css for about section */
+#about_section,
+#career_section {
+  width: 100%;
+  background: rgba(250, 230, 177, 0.3);
+  height: auto;
+  padding: 0;
+}
+
+/* This is the css for about section / Starts Here*/
+.about_text_area {
+  padding: 1%;
+  width: 75%;
+  margin: auto;
+}
+.about_text_area h1 {
+  font-weight: 900;
+  color: #ffa101;
+  font-size: 42px;
+  text-align: center;
+  padding: 0 1%;
+}
+.about_text_area p {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: justify;
+  color: #31515c;
+}
+
+.team_sec {
+  margin: 1% auto !important;
+  width: 100%;
+}
+.team_sec h2 {
+  font-size: 30px;
+  color: #ffa101;
+  font-weight: 700;
+  padding: 1%;
+  text-align: center;
+}
+.team_sec .team_memb {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto !important;
+  gap: 5px;
+  width: 100%;
+  padding: 1%;
+}
+.team_sec .team_memb .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 22%;
+  padding: 2px;
+  margin: auto !important;
+}
+.team_sec .team_memb .card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.team_sec .team_memb .card .container {
+  padding: 2px 16px;
+}
+.team_sec .team_memb .card .container h4 {
+  color: #ffa101;
+}
+.team_sec .team_memb .card .container p {
+  color: #31515c;
+  font-weight: 400;
+}
+
+/* This is the css for about section / Ends Here*/
+/*This is the css for About us/ Contact us Page.. including all elements /Starts Here/ */
+.contact {
+  position: relative;
+  height: auto;
+  padding: 2% 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url(../img/pexels-aleksandar-pasaric-325185.jpg),
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3));
+  background-size: cover;
+}
+.contact .content {
+  max-width: 100%;
+  padding: 1%;
+  text-align: center;
+}
+.contact .content h2 {
+  font-weight: 900;
+  color: #ffa101;
+  font-size: 42px;
+  text-align: center;
+  padding: 0 1%;
+}
+.contact .content p {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: justify;
+  color: #31515c;
+}
+.contact .contain {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.contact .contain .contactinfo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.contact .contain .contactinfo .box {
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+}
+.contact .contain .contactinfo .box .icon {
+  min-width: 60px;
+  height: 60px;
+  background: #fff;
+  display: flex;
+  color: #31515c;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 22px;
+}
+.contact .contain .contactinfo .box .text {
+  display: flex;
+  margin-left: 20px;
+  font-size: 16px;
+  color: #31515c;
+  flex-direction: column;
+  font-weight: 400;
+}
+.contact .contain .contactinfo .box .text h3 {
+  font-weight: 500;
+  color: #ffa101;
+}
+.contact .contain .contact_form {
+  width: 40%;
+  padding: 40px;
+  background: #fff;
+}
+.contact .contain .contact_form h2 {
+  font-size: 30px;
+  color: #31515c;
+  font-weight: 500;
+}
+.contact .contain .contact_form .inputBox {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+.contact .contain .contact_form .inputBox input,
+.contact .contain .contact_form .inputBox textarea {
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  resize: none;
+}
+.contact .contain .contact_form .inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #31515c;
+}
+
+.contact_form .inputBox input:focus ~ span,
+.contact .contain .contact_form .inputBox textarea:focus ~ span,
+.contact_form .inputBox input:valid ~ span,
+.contact .contain .contact_form .inputBox textarea:valid ~ span,
+.contact_form .inputBox textarea:focus ~ span,
+.contact_form .inputBox textarea:valid ~ span {
+  color: #31515c !important;
+  font-size: 12px !important;
+  transform: translateY(-20px) !important;
+}
+
+.contact_form .inputBox input[type="submit"],
+.contact .contain .contact_form .inputBox textarea[type="submit"] {
+  width: 100px !important;
+  background: #31515c !important;
+  color: #fff !important;
+  border: none !important;
+  cursor: pointer !important;
+  padding: 10px !important;
+  font-size: 18px !important;
+}
+.contact_form .inputBox input[type="submit"]:hover,
+.contact .contain .contact_form .inputBox textarea[type="submit"]:hover {
+  background: #ffa101 !important;
+}
+
+/*This is the css for About us/ Contact us Page.. including all elements /Ends Here/ */
+/*This is the css for About us/Career Page.. including all elements /Starts Here/ */
+#career_section {
+  padding: 1%;
+}
+
+.career_box {
+  padding: 1%;
+}
+.career_box h2 {
+  font-weight: 900;
+  color: #ffa101;
+  font-size: 42px;
+  text-align: center;
+  padding: 0 1%;
+}
+.career_box .vacancy {
+  text-decoration: none;
+  width: 80%;
+  border-radius: 10px;
+  margin: 2% auto;
+  display: flex;
+  box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.2);
+  justify-content: space-between;
+  transition: 0.7s ease;
+}
+.career_box .vacancy:hover {
+  box-shadow: 1px 0px 4px #31515c;
+  transform: scale(20px);
+}
+.career_box .vacancy .com_detail {
+  padding: 1%;
+  color: #31515c;
+}
+.career_box .vacancy .com_detail h4 {
+  font-weight: 700;
+  font-size: 17px;
+}
+.career_box .vacancy .com_detail p {
+  font-size: 15px;
+  font-weight: 500;
+}
+.career_box .vacancy .job_detail {
+  padding: 1%;
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  color: #31515c;
+}
+
+/*This is the css for About us/Career Page.. including all elements /Ends Here/ */
+/* This is the css for About us/clients Page... including all the elements -- Starts here */
+#client_section h2 {
+  font-weight: 900;
+  color: #ffa101;
+  font-size: 42px;
+  text-align: center;
+  padding: 1%;
+}
+#client_section .clients_part {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 10px;
+  padding: 1%;
+}
+#client_section .clients_part .clients {
+  width: 30%;
+  height: 230px;
+  background: rgba(179, 222, 229, 0.2);
+  margin: auto !important;
+  box-shadow: 0px 0 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+#client_section .clients_part .clients .clients_profile {
+  padding: 1%;
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  gap: 5px;
+}
+#client_section .clients_part .clients .clients_profile .avatar {
+  width: 25%;
+  margin: auto !important;
+  background: blue;
+  height: 100px !important;
+  border-radius: 50% !important;
+}
+#client_section .clients_part .clients .clients_profile .avatar img {
+  border-radius: 50%;
+  height: 100%;
+  width: 100% !important;
+}
+#client_section .clients_part .clients .clients_profile .details {
+  width: 70%;
+  padding: 1%;
+}
+#client_section .clients_part .clients .clients_profile .details .name {
+  color: #ffa101;
+  font-weight: 500;
+  padding: 1%;
+}
+#client_section .clients_part .clients .clients_profile .details .message {
+  color: #31515c;
+  font-weight: 400;
+  padding: 1%;
+}
+#client_section .clients_part .clients .clients_profile .details .rating {
+  padding: 1%;
+  margin: 1% auto !important;
+}
+#client_section .clients_part .clients .clients_profile .details .rating .fa {
+  font-size: 20px;
+}
+#client_section
+  .clients_part
+  .clients
+  .clients_profile
+  .details
+  .rating
+  .checked {
+  color: orange;
+}
+
+/* This is the css for About us/clients Page... including all the elements -- Starts here */
+/* This is the css for About us/clients Page... including all the elements -- Ends here */
+@media (max-width: 800px) {
+  nav {
+    padding: 2px 20px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav .navbar {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 50px);
+    background: #b3dee5;
+    top: 65px;
+    left: -100%;
+    transition: 0.5s;
+    z-index: 999;
+  }
+
+  nav .navbar.active {
+    left: 0;
+  }
+
+  nav .navbar ul {
+    display: block;
+    text-align: center;
+  }
+
+  nav .navbar ul li a {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
+
+  nav .navbar ul li.active ul {
+    position: relative;
+    background: #b3dee5;
+    z-index: 999;
+  }
+
+  nav .navbar ul li ul {
+    position: absolute;
+    left: 0;
+    background: #b3dee5;
+    display: none;
+    top: 0;
+  }
+
+  nav .navbar ul li ul li {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 850px) {
+  /*Sliders */
+  .home_page_slider {
+    position: relative;
+  }
+
+  .home_page_slider .sliderbox {
+    height: auto;
+  }
+
+  .home_page_slider .owl-dots {
+    left: 43%;
+    bottom: 2%;
+  }
+
+  /*Sliders */
+  /*this is the section for products */
+  #products .product_text,
+  #blogs_sec .product_text,
+  #info .product_text,
+  #foot_nav .product_text,
+  #blogs_sec .blogs_text {
+    font-weight: 700;
+    font-size: 25px;
+  }
+  #products .product_sec,
+  #blogs_sec .product_sec,
+  #info .product_sec,
+  #foot_nav .product_sec,
+  #blogs_sec .blogs_sec {
+    width: 100%;
+    padding: 1%;
+    display: flex;
+    justify-content: space-between;
+  }
+  #products .product_sec .product_box,
+  #blogs_sec .product_sec .product_box,
+  #info .product_sec .product_box,
+  #foot_nav .product_sec .product_box,
+  #blogs_sec .blogs_sec .product_box,
+  #blogs_sec .blogs_sec .blogs_box {
+    width: 100%;
+    margin: 10px auto;
+    transition: 0.7s ease;
+  }
+  #products .product_sec .product_box a,
+  #blogs_sec .product_sec .product_box a,
+  #info .product_sec .product_box a,
+  #foot_nav .product_sec .product_box a,
+  #blogs_sec .blogs_sec .product_box a,
+  #blogs_sec .blogs_sec .blogs_box a {
+    text-decoration: none;
+  }
+  #products .product_sec .product_box a h5,
+  #blogs_sec .product_sec .product_box a h5,
+  #info .product_sec .product_box a h5,
+  #foot_nav .product_sec .product_box a h5,
+  #blogs_sec .blogs_sec .product_box a h5,
+  #blogs_sec .blogs_sec .blogs_box a h5 {
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+  /*this is the section for products */
+  /*Banner Section */
+  #banner .banner_content {
+    display: flex;
+    width: 90%;
+  }
+  #banner .banner_content h2 {
+    font-size: 25px;
+    padding: 1%;
+  }
+
+  /*Banner Section */
+  /*This is the css for banner with view member button */
+  /*Blogs Section css starts from here */
+  #blogs_sec .blogs_text {
+    font-size: 17px;
+    font-weight: 400;
+    padding-top: 10px;
+  }
+  #blogs_sec .blogs_sec {
+    display: flex;
+    justify-content: space-between;
+  }
+  #blogs_sec .blogs_sec .blogs_box {
+    width: 48%;
+  }
+
+  /*Blogs Section css ends here */
+  /*This is the section for videos and event */
+  #info {
+    display: flex;
+    flex-direction: column;
+  }
+  #info #videos {
+    width: 100% !important;
+  }
+  #info #videos .video_text {
+    color: red;
+    font-size: 20px;
+  }
+  #info #videos .videos_sec {
+    display: flex;
+    flex-direction: column;
+  }
+  #info #events {
+    width: 100%;
+    padding: 1%;
+  }
+  #info #events .event_text {
+    font-size: 20px;
+  }
+  #info #events .events_sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 1%;
+  }
+  #info #events .events_sec .eventbox {
+    width: 95%;
+  }
+  #info #events .events_sec .eventbox a {
+    text-align: justify;
+    text-decoration: none;
+    color: #423836;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  #info #events .events_sec .eventbox a span {
+    color: #110b0a;
+    font-weight: 200;
+    font-size: 15px;
+  }
+
+  /*This is the section for videos and event */
+  /*This is the css for footer navigation */
+  #foot_nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100% !important;
+    margin: auto !important;
+  }
+  #foot_nav .nav_sec {
+    width: 50% !important;
+    margin: auto !important;
+    align-items: center !important;
+  }
+  #foot_nav .nav_sec .social_icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center !important;
+    width: 50% !important;
+    margin-left: 30px;
+  }
+  #foot_nav .nav_sec .social_icon a {
+    width: 20%;
+  }
+  #foot_nav .nav_sec h3 {
+    padding: 2%;
+    text-align: left;
+    color: Red;
+    font-weight: 500;
+    font-size: 18px;
+    margin-left: 20px;
+  }
+  #foot_nav .nav_sec ul {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+  }
+
+  /*This is the css for footer navigation */
+  /*This is the entire css for services part */
+  /*This is the css for Veganism page-Fitness Page- Addiction Free  -Starts Here */
+  .text-area,
+  .text_box_info {
+    width: 100%;
+    padding: 1%;
+  }
+  .text-area .h_text,
+  .text_box_info .h_text,
+  .text-area .text_box_info h2,
+  .text_box_info .text-area h2,
+  .text_box_info h2 {
+    font-size: 35px;
+    font-weight: 700;
+  }
+  .text-area h4,
+  .text_box_info h4 {
+    font-size: 22px;
+  }
+  .text-area .imgbox,
+  .text_box_info .imgbox {
+    width: 100%;
+    height: 70%;
+    margin: auto;
+  }
+  .text-area .imgbox .center_box,
+  .text_box_info .imgbox .center_box {
+    width: 100%;
+  }
+  .text-area .imgbox .center_box h2,
+  .text_box_info .imgbox .center_box h2 {
+    font-size: 22px;
+    font-weight: 600;
+  }
+  .text-area .imgbox .center_box ul,
+  .text_box_info .imgbox .center_box ul {
+    padding: 10px 20px;
+  }
+  .text-area .imgbox h3,
+  .text_box_info .imgbox h3 {
+    font-size: 25px;
+    font-weight: 700;
+  }
+
+  /*This is the entire css for services part */
+  /*This is the css for Veganism page-Fitness Page- Addiction Free  -ends Here */
+  /*This is the css for info section that contains... Disclaimer, Terms and condtion and Privacy Policy pages.. Starts Here */
+  .text_box_info {
+    padding: 1%;
+  }
+  .text_box_info ul {
+    padding: 10px 20px;
+  }
+
+  /*This is the css for info section that contains... Disclaimer, Terms and condtion and Privacy Policy pages.. Ends Here */
+  /* This is the css for about section / Starts Here*/
+  #about_section,
+  #career_section {
+    width: 100%;
+  }
+  #about_section .about_text_area,
+  #career_section .about_text_area {
+    width: 95%;
+    margin: auto !important;
+  }
+  #about_section .about_text_area h1,
+  #career_section .about_text_area h1 {
+    font-size: 35px;
+    font-weight: 700;
+  }
+  #about_section .team_sec,
+  #career_section .team_sec {
+    width: 98%;
+  }
+  #about_section .team_sec h2,
+  #career_section .team_sec h2 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  #about_section .team_sec .team_memb,
+  #career_section .team_sec .team_memb {
+    width: 98%;
+  }
+  #about_section .team_sec .team_memb .card,
+  #career_section .team_sec .team_memb .card {
+    flex: 35%;
+    margin: auto;
+    padding: 1%;
+  }
+
+  /* This is the css for about section / Ends Here*/
+  /*This is the css for About us/ Contact us Page.. including all elements /starts Here/ */
+  .contact {
+    padding: 2%;
+  }
+
+  .contain {
+    flex-direction: column;
+    padding: 2%;
+  }
+
+  .contain .contactinfo {
+    margin-bottom: 1%;
+  }
+
+  .contain .contactinfo,
+  .contact_form {
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /*This is the css for About us/ Contact us Page.. including all elements /Ends Here/ */
+  /*This is the css for career About us/ section start here*/
+  #career_section .career_box .vacancy {
+    width: 96%;
+  }
+
+  /*This is the css for career About us/ section start here*/
+  /*This is the css for client - About us/ Starts here */
+  #client_section h2 {
+    font-size: 30px;
+    font-weight: 700;
+  }
+  #client_section .clients_part {
+    display: flex;
+    flex-direction: column;
+  }
+  #client_section .clients_part .clients {
+    width: 100%;
+    padding: 1%;
+  }
+  #client_section .clients_part .clients .clients_profile .avatar {
+    width: 20%;
+    height: 75px !important;
+  }
+
+  /*This is the css for client - About us/ Ends here */
+  /*This is the css for product page -/Starts here */
+  #product_section h2 {
+    font-size: 30px;
+    font-weight: 700;
+  }
+  #product_section .product_part {
+    gap: 5px;
+    padding: 1%;
+    flex-direction: row !important;
+  }
+  #product_section .product_part .product_log {
+    width: 45% !important;
+    padding: 1%;
+  }
+  #product_section .product_part .product_log .product_box,
+  #product_section .product_part .product_log #blogs_sec .blogs_sec .blogs_box,
+  #blogs_sec .blogs_sec #product_section .product_part .product_log .blogs_box {
+    height: 100px !important;
+  }
+
+  /*This is the css for product page -/Starts here */
+  /*this is the css for blogs page- Start Here */
+  #blogs_section h2 {
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  /*this is the css for blogs page- End Here */
+  /*this is the css for Events page- Start Here */
+  #events_section h2 {
+    font-size: 30px;
+    font-weight: 700;
+  }
+  #events_section .events_sec .eventbox {
+    width: 100%;
+  }
+
+  /*this is the css for Events page- End Here */
+  /*This is the css for Trainers page - Starts here*/
+  #trainers_section {
+    /*This is the css for Trainers page - Ends here*/
+  }
+  #trainers_section h2 {
+    font-size: 30px;
+    font-weight: 700;
+  }
+  #trainers_section .trainers_part {
+    padding: 1% 5% !important;
+  }
+  #trainers_section .trainers_part .trainers-card-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  #trainers_section .trainers_part .trainers-card-group .trainers-flip-card {
+    width: 100% !important;
+    margin: 4% 0 !important;
+  }
+  #trainers_section
+    .trainers_part
+    .trainers-card-group
+    .trainers-flip-card
+    .trainers-flip-card-inner
+    .trainers-flip-card-back {
+    padding-top: 50px !important;
+  }
+}
+/*This is the css for products page - Starts here */
+#product_section {
+  width: 100%;
+  margin: auto;
+}
+#product_section h2 {
+  font-weight: 900;
+  color: #ffa101;
+  font-size: 42px;
+  text-align: center;
+  padding: 1%;
+}
+#product_section .product_part {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 10px;
+  padding: 1%;
+}
+#product_section .product_part .product_log {
+  width: 22%;
+  margin: auto !important;
+}
+#product_section .product_part .product_log .product_box,
+#product_section .product_part .product_log #blogs_sec .blogs_sec .blogs_box,
+#blogs_sec .blogs_sec #product_section .product_part .product_log .blogs_box {
+  overflow: hidden !important;
+  height: 200px;
+}
+#product_section .product_part .product_log .product_box .product_item img,
+#product_section
+  .product_part
+  .product_log
+  #blogs_sec
+  .blogs_sec
+  .blogs_box
+  .product_item
+  img,
+#blogs_sec
+  .blogs_sec
+  #product_section
+  .product_part
+  .product_log
+  .blogs_box
+  .product_item
+  img {
+  transition: 0.7s ease;
+}
+#product_section
+  .product_part
+  .product_log
+  .product_box
+  .product_item
+  img:hover,
+#product_section
+  .product_part
+  .product_log
+  #blogs_sec
+  .blogs_sec
+  .blogs_box
+  .product_item
+  img:hover,
+#blogs_sec
+  .blogs_sec
+  #product_section
+  .product_part
+  .product_log
+  .blogs_box
+  .product_item
+  img:hover {
+  transform: scale(1.35, 1.35);
+}
+#product_section .product_part .product_log a {
+  text-decoration: none;
+}
+#product_section .product_part .product_log a h4 {
+  color: #ffa101;
+  text-align: center;
+}
+
+/* This is the css for products page - Ends here */
+/* This is the css for blogs page */
+#blogs_section {
+  width: 100%;
+  margin: auto;
+}
+#blogs_section h2 {
+  font-weight: 900;
+  color: #ffa101;
+  font-size: 42px;
+  text-align: center;
+  padding: 1%;
+}
+#blogs_section .blogs {
+  padding: 1% 1%;
+  margin: auto;
+}
+#blogs_section .blogs .blog_box {
+  margin: auto;
+  padding: 1%;
+}
+#blogs_section .blogs .blog_box:hover {
+  box-shadow: 0px 0px 10px grey;
+}
+#blogs_section .blogs .blog_box a {
+  text-decoration: none;
+  color: #31515c;
+}
+#blogs_section .blogs .blog_box a .bloginfo_sec {
+  display: flex;
+  justify-content: space-between;
+  color: #31515c;
+}
+#blogs_section .blogs .blog_box a .blogs_content {
+  padding: 1% 0;
+}
+#blogs_section .blogs .blog_box a .blogs_content h3 {
+  color: #31515c;
+  text-align: justify;
+}
+#blogs_section .blogs .blog_box a .blogs_content p {
+  color: #31515c;
+  text-align: justify;
+}
+#blogs_section .blogs .blog_box a .blogs_content a {
+  padding: 2% 0;
+  color: blue;
+}
+
+/* This is the css for blogs page */
+/*This is the Css for Events page - Starts here */
+#events_section {
+  width: 100%;
+  margin: auto;
+}
+#events_section h2 {
+  font-weight: 900;
+  color: #ffa101;
+  font-size: 42px;
+  text-align: center;
+  padding: 1%;
+}
+#events_section .events_sec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 1%;
+}
+#events_section .events_sec .eventbox {
+  padding: 1%;
+  margin: 5px auto;
+  border-radius: 5px;
+  width: 90%;
+  transition: 0.3s ease-out;
+}
+#events_section .events_sec .eventbox:hover {
+  box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.4);
+}
+#events_section .events_sec .eventbox a {
+  text-align: justify;
+  text-decoration: none;
+  color: #31515c;
+  font-size: 19px;
+  font-weight: 400;
+  text-align: justify;
+}
+#events_section .events_sec .eventbox a span {
+  color: #31515c;
+  font-weight: 200;
+  font-size: 16px;
+}
+
+/*This is the Css for Events page - ends here */
+#trainers_section h2 {
+  font-weight: 900;
+  color: #ffa101;
+  font-size: 42px;
+  text-align: center;
+  padding: 1%;
+}
+#trainers_section .trainers_part {
+  padding: 1% 10%;
+}
+#trainers_section .trainers_part .trainers-card-group {
+  display: flex;
+  width: 100%;
+  padding: 1%;
+  justify-content: space-between;
+}
+#trainers_section .trainers_part .trainers-card-group .trainers-flip-card {
+  background-color: transparent;
+  width: 24%;
+  height: 300px;
+  margin: 0 1%;
+}
+#trainers_section
+  .trainers_part
+  .trainers-card-group
+  .trainers-flip-card:hover
+  .trainers-flip-card-inner {
+  transform: rotateY(180deg);
+}
+#trainers_section
+  .trainers_part
+  .trainers-card-group
+  .trainers-flip-card
+  .trainers-flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.4s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+#trainers_section
+  .trainers_part
+  .trainers-card-group
+  .trainers-flip-card
+  .trainers-flip-card-inner
+  .trainers-flip-card-front,
+#trainers_section
+  .trainers_part
+  .trainers-card-group
+  .trainers-flip-card
+  .trainers-flip-card-inner
+  .trainers-flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background-color: #bbb;
+  color: black;
+}
+#trainers_section
+  .trainers_part
+  .trainers-card-group
+  .trainers-flip-card
+  .trainers-flip-card-inner
+  .trainers-flip-card-back {
+  background-color: #b3dee5;
+  color: #ffa101;
+  padding-top: 30px;
+  transform: rotateY(180deg);
+}
